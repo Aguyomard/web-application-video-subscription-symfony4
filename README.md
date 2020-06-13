@@ -11,13 +11,13 @@ Les vidéos mises à disposition sont référencées sur cette page ou elles peu
 
 <a href="url"><img src="https://github.com/Aguyomard/web-application-video-subscription-symfony4/blob/master/screens/admin_videos.png" width="70%" height="70%" class="center"></a>
 <h2>Catégories</h2>
-Ces catégories qui peuvent crées et hiérarchisées sur cette page.
+Ces catégories peuvent etre crées et hiérarchisées depuis cette page.
 
 <a href="url"><img src="https://github.com/Aguyomard/web-application-video-subscription-symfony4/blob/master/screens/admin_categories.png" width="70%" height="70%" class="center"></a>
 <h1>Front office</h1>
 <h2>Procédure d’inscription</h2>
 L’inscription se fait en deux étapes :
-Le choix de l’abonnement d’abord. Les abonnements diffèrent par leur prix et sont limités dans le temps. En interne, l’état de l’abonnement des utilisateurs est géré pour adapter leurs droits sur le site. Le système de paiement n’est pour le moment pas intégré au site.
+Le choix de l’abonnement d’abord. Les abonnements diffèrent par leur prix et sont limités dans le temps. En interne, le statut de l’abonnement des utilisateurs est géré pour adapter leurs droits sur le site. Le système de paiement n’est pour le moment pas intégré au site.
 
 <a href="url"><img src="https://github.com/Aguyomard/web-application-video-subscription-symfony4/blob/master/screens/pricing.png" width="70%" height="70%" class="center"></a>
 
