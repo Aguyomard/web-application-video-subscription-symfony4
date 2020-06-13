@@ -1,0 +1,75 @@
+{% extends 'admin/base.html.twig' %}
+{% block mainadmin %}
+
+    {% if is_granted('ROLE_ADMIN') %}
+        <h2>Videos</h2>
+    {% else %}
+        <h2>My liked videos</h2>
+    {% endif %}
+
+    <div class="table-responsive">
+        <table class="table table-striped table-sm">
+            <thead>
+            <tr>
+                <th>#</th>
+                <th>Video name</th>
+                <th>Link</th>
+                {% if is_granted('ROLE_ADMIN') %}
+                    <th>Category</th>
+                    <th>Delete</th>
+                {% endif %}
+            </tr>
+            </thead>
+            <tbody>
+            {% for video in videos %}
+                <tr>
+                    <td>{{ loop.index }}</td>
+                    <td>{{video.title}}</td>
+                    <td>
+                        <a target="_blank" href="{{path('video_details',{'video':video.id})}}">go to video</a>
+
+                        {% if is_granted('ROLE_ADMIN') and video.duration is null %}
+                            | <a href="{{path('set_video_duration',{'video':video.id,'vimeo_id':video.vimeoId})}}">set duration</a>
+                        {% endif %}
+
+                    </td>
+                    {% if is_granted('ROLE_ADMIN') %}
+                        <td>
+                            <form action="{{path('update_video_category',{'video':video.id})}}" method="POST">
+                                <select name="video_category" onchange="this.form.submit();">
+
+                                    {% for category in categories.categorylist %}
+                                        {% if video.category is not null and video.category.id == category.id  %}
+                                            <option selected value="{{category.id}}">{{category.name}}</option>
+                                        {% else %}
+                                            <option value="{{category.id}}">{{category.name}}</option>
+                                        {% endif %}
+                                    {% endfor %}
+                                    {% if video.category is null %}
+                                        <option selected value="0">No category</option>
+                                    {% endif %}
+                                </select>
+                            </form>
+
+
+                        </td>
+
+                        <td><a href="{{path('delete_video',{'video':video.id, 'path':video.vimeoId})}}" onclick="delete_video(event);"><i class="fas fa-trash"></i></a></td>
+
+                    {% endif %}
+                </tr>
+            {% endfor %}
+            </tbody>
+        </table>
+    </div>
+{% endblock %}
+{% block customjavascripts %}
+    {{parent()}}
+    <script>
+        function delete_video(e)
+        {
+            confirm('Are you sure?');
+        }
+    </script>
+{% endblock %}
+

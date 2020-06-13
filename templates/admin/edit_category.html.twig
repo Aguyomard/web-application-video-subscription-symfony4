@@ -1,0 +1,22 @@
+{% extends 'admin/base.html.twig' %}
+{% block mainadmin %}
+    <h2>Editing category</h2>
+
+
+    {{ form_start(form) }}
+    {{ form_widget(form.name,{'attr': {'class': 'form-control' ~ is_invalid, 'placeholder': 'Category name'}, 'id': 'validationServer01' }) }}
+    <br>
+    <label for="inlineFormCustomSelect">Parent:</label>
+    <select name="category[parent]" class="custom-select mr-sm-2" id="inlineFormCustomSelect">
+
+        {{ render(controller('App\\Controller\\Admin\\Superadmin\\CategoriesController::getAllCategories',{'editedCategory':category})) }}
+
+    </select>
+    <div class="invalid-feedback">
+        {{ form_errors(form.name) }}
+    </div>
+    <button class="btn btn-primary mt-3" type="submit">Save</button>
+
+    {{ form_end(form) }}
+{% endblock %}
+
