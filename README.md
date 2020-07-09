@@ -17,14 +17,14 @@ Ces catégories peuvent etre créées et hiérarchisées depuis cette page.
 <h1>Front office</h1>
 <h2>Procédure d’inscription</h2>
 L’inscription se fait en deux étapes :
-Le choix de l’abonnement d’abord. Les abonnements diffèrent par leur prix et sont limités dans le temps. En interne, le statut de l’abonnement des utilisateurs est géré pour adapter leurs droits sur le site. Le système de paiement n’est pour le moment pas intégré au site.
+Le choix de l’abonnement d’abord. Les abonnements diffèrent par leurs prix et sont limités dans le temps. En interne, le statut de l’abonnement des utilisateurs est géré pour adapter leurs droits sur le site. Le système de paiement n’est pour le moment pas intégré au site.
 
 <a href="url"><img src="https://github.com/Aguyomard/web-application-video-subscription-symfony4/blob/master/screens/pricing.png" width="70%" height="70%" class="center"></a>
 
 Une fois ce choix effectué, l’utilisateur peut renseigner les informations nécessaires à la création de son compte.
 <a href="url"><img src="https://github.com/Aguyomard/web-application-video-subscription-symfony4/blob/master/screens/register.png" width="70%" height="70%" class="center"></a>
 <h2>Accès aux vidéos</h2>
-Sur le site, l’utilisateur ayant un compte avec un statut actif pourra visionner les vidéos présentes sur le site. En passant par la recherche ou par le menu comprenant les différentes catégories de vidéos. L’utilisateur peut voir les vidéos disponibles et laisser une note à chacune d’elles.
+Sur le site, l’utilisateur ayant un compte avec un statut actif pourra visionner les vidéos présentes sur le site. En passant par la recherche ou par le menu comprenant les différentes catégories de vidéos. L’utilisateur peut voir les vidéos disponibles et laisser une note à chacunes d’elles.
 
 <a href="url"><img src="https://github.com/Aguyomard/web-application-video-subscription-symfony4/blob/master/screens/movies.png" width="70%" height="70%" class="center"></a>
 
