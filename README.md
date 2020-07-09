@@ -11,7 +11,7 @@ Les vidéos mises à disposition sont référencées sur cette page ou elles peu
 
 <a href="url"><img src="https://github.com/Aguyomard/web-application-video-subscription-symfony4/blob/master/screens/admin_videos.png" width="70%" height="70%" class="center"></a>
 <h2>Catégories</h2>
-Ces catégories peuvent etre crées et hiérarchisées depuis cette page.
+Ces catégories peuvent etre créées et hiérarchisées depuis cette page.
 
 <a href="url"><img src="https://github.com/Aguyomard/web-application-video-subscription-symfony4/blob/master/screens/admin_categories.png" width="70%" height="70%" class="center"></a>
 <h1>Front office</h1>
